@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(192, 190, 190);
+  background-color: rgb(31, 30, 30);
+  color: rgb(105, 114, 126);
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+.img {
+  width:100%;
+}
+
+.textContent {
+  display: flex;
+  overflow-wrap: break-word;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.cardText {
+  padding-left: 10px;
+  color: rgb(224, 220, 220);
+  font-size: 1rem
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.btn {
+  padding: 2px 20px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #23415a;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.7;
+    border: 1px solid rgb(194, 193, 193);
+  }
+}

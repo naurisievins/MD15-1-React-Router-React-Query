@@ -1,1 +1,54 @@
 @import "assets/reset.scss"; /* Import reset.css */
+
+:root {
+  font-size: 16;
+  line-height: 1.5;
+}
+
+body {
+  background-color: rgb(107 110 112);
+  padding: 30px;
+}
+
+.header {
+
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  background-color: rgb(35, 65, 90);
+  box-shadow: inset 0 6px 0px rgb(31, 30, 30);
+  border-radius: 5px;
+  overflow: hidden;
+  border: none;
+  user-select: none;
+}
+
+nav > a {
+  background-color: rgb(146, 151, 155);
+  padding: 10px 50px;
+  border: none;
+  transition: 0.5s;
+
+}
+nav > a.active {
+  background-color: rgb(35, 65, 90);
+  box-shadow: inset 0 6px 0px rgb(31, 30, 30);
+   outline: none;
+}
+
+main {
+  display: flex;
+  padding: 10px 20px;
+  line-height: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
