@@ -15,12 +15,10 @@ export default function Card_info () {
     axios.get(url).then(({ data }) => setCardData(data));
   }, []);
 
-  console.log(cardData)
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.card}
-            key={Math.random()}
+            key={cardData?.id}
       >
         <div className={styles.img}>
           <img src={`${cardData?.image}`} />
